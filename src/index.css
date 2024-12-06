@@ -1,0 +1,176 @@
+
+@import "../@styling/main.scss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0;
+  margin:0;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: linear-gradient(
+    180deg,
+    #2a93fc,
+    #0071EB,
+    #0069D9,
+    #0059B8,
+    #004A99
+  
+);
+   
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.team-player:hover{
+  background-color: red !important;
+  animation: 3s linear 1s slidein;
+  
+}
+
+
+
+.team-player{
+  background-color: #5f83b9 !important;
+}
+
+.superteam-name{
+  background-color:red !important ;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-right: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  height: 100px;
+  margin-left: 10%;
+}
+
+.team-card {
+  padding: 5px;
+  margin: 0 10%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  /* animation: Animate 2s forwards; */
+  position:relative;
+  background-color: #00112a;
+  height: 100px;
+  
+}
+
+
+.team-player-name{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+.team-card-dark{
+  background: #3018ba;
+  border-radius: 10px;
+}
+
+.team-card-light{
+  background: #3E4DED;  
+  border-radius: 10px;
+}
+
+@keyframes Animate {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.dark {
+  background: linear-gradient(
+    180deg,
+    #4200ff,
+    #0028cf,
+    #002899,
+    #001f60,
+    #00112a
+  );
+}
+
+
+
+.light {
+  background: linear-gradient(
+    180deg,
+    #2a93fc,
+    #0071EB,
+    #0069D9,
+    #0059B8,
+    #004A99
+    );
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+body * {
+  transition:0.3s;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

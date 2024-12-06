@@ -1,0 +1,28 @@
+[
+    {
+        "id": 2,
+        "idTeam": 1,
+        "nomDefis": "Cookie Cauchemar"
+    },
+    {
+        "id": 3,
+        "idTeam": 1,
+        "nomDefis": "My credit page so amazing"
+    },
+    {
+        "id": 4,
+        "idTeam": 1,
+        "nomDefis": "Horizon Connecté"
+    },
+    {
+        "id": 5,
+        "idTeam": 1,
+        "nomDefis": "L'ergonomie : simplifier pour mieux vivre."
+    },
+    {
+        "id": 6,
+        "idTeam": 1,
+        "nomDefis": "L'IA pourrait-elle prendre le contrôle du jeu ?"
+    }
+
+]
