@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 
 export default function TeamCard({ team, users }) {
 
-    console.log(team,"isteam")
 
     return (
         <>

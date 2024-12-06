@@ -14,12 +14,12 @@ function App() {
   const [windowMiddle, setWindowMiddle] = useState(window.innerHeight / 2);
   
   useEffect(() => {
-    fetch("../public/team.json").then(res => res.json()).then(data => {
+    fetch("../team.json").then(res => res.json()).then(data => {
       setTeams(data)
       console.log(data)
     });
-    fetch("../public/membres.json").then(res => res.json()).then(data => setPersons(data));
-    fetch("../public/defis.json").then(res => res.json()).then(data => {
+    fetch("../membres.json").then(res => res.json()).then(data => setPersons(data));
+    fetch("../defis.json").then(res => res.json()).then(data => {
       setChallenges(data)
       console.log(data,"are challenges")
     });
@@ -29,9 +29,6 @@ function App() {
   useEffect(() => {
     const handleResize = () => {
       const teamCards = document.querySelectorAll('.team-card');
-      teamCards.forEach((teamCard) => {
-        teamCard.style.left = `${windowMiddle}px`;
-      });
     };
 
     window.addEventListener('resize', handleResize);
@@ -43,14 +40,13 @@ function App() {
 
 
 
-
   function PoissonMode() {
     return (
       <button onClick={() => {
         setTheme(theme === 'light' ? 'dark' : 'light');
       }}>
         <img src={
-          theme === 'light' ? "../public/Poisson_dark_mode.png" : "../public/Poisson_light_mode.png"
+          theme === 'light' ? "../Poisson_dark_mode.png" : "../Poisson_light_mode.png"
         } />
       </button>
     );
@@ -62,10 +58,14 @@ function App() {
     }>
     <PoissonMode />
       <div className="display-teams-info " ref={ref}>
-        <div className="superteam-name">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="rickroll">
+        <div className="superteam-name ">
+        <div className={
+                  theme === 'light' ? 'superteam-name-light' : 'superteam-name-dark '
+                  }>
             Dev&apos;astateurs
-          
-        </div>
+        </div></div>
+        </a>
         <div className="team-cards" style={{
           top : `${50}px`
         }}>
@@ -76,6 +76,7 @@ function App() {
                   <div className={
                   theme === 'light' ? 'team-card-light' : 'team-card-dark '
                   }>
+                    
                     <TeamCard team={challenge} users={persons} /></div>
                   </div>
               )

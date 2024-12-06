@@ -18,10 +18,11 @@ button img {
 .display-teams-info {
     width: 100vw;
     display: flex;
-    height: 100vh;
+    height: 100%;
     position:relative;
     align-items: center;
     justify-content: space-between;
+    
 
     .team-cards {
         display: flex;
@@ -29,7 +30,9 @@ button img {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: start;
-        min-width: 300px;
+        min-width: 300;
+        margin-left: 20%;
+        margin-right: 10%;
 
         
 
@@ -38,9 +41,9 @@ button img {
             height: fit-content;
             display: flex;
             flex-direction: column;
-            padding: 10px 20px;
+            padding: 10px 10px;
             border-radius: 20px;
-            width: calc(100% - 40px);
+            width: calc(100% - 20px);
             gap: 10px;
             border: 5px solid map-get($colors, app-primary-darker);
             background-color: aqua;
@@ -53,7 +56,7 @@ button img {
     
             .team-name {
                 white-space: nowrap;
-                font-size: 13px;
+                font-size: 25px;
                 color: rgba(255,255,255,0.7);
                 text-align: center;
                 

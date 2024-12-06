@@ -27,32 +27,62 @@
 
 }
 
+
+
+
+
+.team-player{
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
 .team-player:hover{
-  background-color: red !important;
+  background-color: #2a93fc !important;
+  transform: scale(1.1);
   animation: 3s linear 1s slidein;
   
 }
 
 
 
-.team-player{
-  background-color: #5f83b9 !important;
-}
 
-.superteam-name{
-  background-color:red !important ;
+
+
+
+.superteam-name {
   display: flex;
   justify-content: center;
-  position: absolute;
-  margin-right: 50px;
+  align-items: center;
+  position: fixed;
+  top: 50%; 
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: center;
   padding: 5px;
-  border-radius: 10px;
   height: 100px;
-  margin-left: 10%;
+  color: rgba(255, 255, 255, 0.7);
 }
 
+
+.superteam-name-dark {
+  background-color: #4200ff;
+  border: 1rem solid #2a93fc;
+  padding: 50%;
+  border-radius: 10px;
+}
+
+
+
+.superteam-name-light {
+  background-color: #2a93fc;
+  border: 1rem solid #4200ff;
+  padding: 50%;
+  border-radius: 10px;
+}
+
+
+
+
 .team-card {
-  padding: 5px;
   margin: 0 10%;
   display: flex;
   justify-content: center;
@@ -117,6 +147,11 @@
     #0059B8,
     #004A99
     );
+}
+
+.rickroll {
+  color : inherit;
+
 }
 
 a {
